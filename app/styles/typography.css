@@ -1,0 +1,107 @@
+/* Typography Presets */
+
+/* Text Preset 1 - Martian Mono Bold */
+.text-preset-1 {
+  font-family: var(--font-martian-mono);
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -2px;
+}
+
+@media (max-width: 768px) {
+  .text-preset-1 {
+    font-size: 38px;
+  }
+}
+
+/* Text Preset 2 - Martian Mono SemiBold */
+.text-preset-2 {
+  font-family: var(--font-martian-mono);
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: -2px;
+}
+
+@media (max-width: 768px) {
+  .text-preset-2 {
+    font-size: 34px;
+  }
+}
+
+/* Text Preset 3 - Martian Mono SemiBold */
+.text-preset-3 {
+  font-family: var(--font-martian-mono);
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: -1px;
+}
+
+@media (max-width: 768px) {
+  .text-preset-3 {
+    font-size: 24px;
+    line-height: 110%;
+  }
+}
+
+/* Text Preset 4 - Martian Mono SemiBold */
+.text-preset-4 {
+  font-family: var(--font-martian-mono);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: -1px;
+}
+
+/* Text Preset 4 Regular - Martian Mono Regular */
+.text-preset-4-regular {
+  font-family: var(--font-martian-mono);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: -1px;
+}
+
+/* Text Preset 5 - Inter Regular */
+.text-preset-5 {
+  font-family: var(--font-inter);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.5px;
+}
+
+/* Text Preset 5 SemiBold - Inter SemiBold */
+.text-preset-5-semibold {
+  font-family: var(--font-inter);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: -0.5px;
+}
+
+/* Text Preset 6 - Martian Mono SemiBold */
+.text-preset-6 {
+  font-family: var(--font-martian-mono);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: -1px;
+}
+
+@media (max-width: 768px) {
+  .text-preset-6 {
+    font-size: 16px;
+  }
+}
+
+/* Text Preset 7 - Martian Mono Regular */
+.text-preset-7 {
+  font-family: var(--font-martian-mono);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -1px;
+}
