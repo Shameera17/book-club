@@ -1,3 +1,10 @@
+:root {
+  /* Gradients */
+  --gradient-text: linear-gradient(107deg, #ff9a6d -11.37%, #062630 61.84%);
+  --gradient-bg: linear-gradient(180deg, #ffe2d1 0%, #fff5ef 100%);
+  --gradient-hero: linear-gradient(90deg, #ffe2d1 0%, #fff5ef 100%);
+}
+
 @theme inline {
   /* Neutral colors */
   --color-neutral-0: #ffffff;
@@ -10,12 +17,6 @@
   --color-light-salmon-50: #fff5ef;
   --color-light-salmon-100: #ffe2d1;
   --color-light-salmon-500: #fea38f;
-
-  /* Text Gradient */
-  --gradient-text: linear-gradient(107deg, #ff9a6d -11.37%, #062630 61.84%);
-
-  /* Background Gradient */
-  --gradient-bg: linear-gradient(180deg, #ffe2d1 0%, #fff5ef 100%);
 
   /* Spacing */
   --spacing-0: 0;

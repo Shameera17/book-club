@@ -27,3 +27,15 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
 }
+
+/* Utility classes */
+.bg-gradient-hero {
+  background: var(--gradient-hero);
+}
+
+.bg-gradient-text {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
