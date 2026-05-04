@@ -68,7 +68,7 @@
 .text-preset-5 {
   font-family: var(--font-inter);
   font-size: 20px;
-  font-weight: 400;
+  /* font-weight: 400; */
   line-height: 140%;
   letter-spacing: -0.5px;
 }
@@ -77,7 +77,7 @@
 .text-preset-5-semibold {
   font-family: var(--font-inter);
   font-size: 20px;
-  font-weight: 600;
+  /* font-weight: 600; */
   line-height: 140%;
   letter-spacing: -0.5px;
 }
