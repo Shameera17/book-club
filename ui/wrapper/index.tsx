@@ -11,10 +11,11 @@ const CardWrapper = ({ children, isHero }: CardWrapperProps) => {
         backgroundBlendMode: "overlay", // or 'multiply', 'soft-light'
         backgroundSize: "cover",
         backgroundPosition: "center",
+        height: "max-content",
       }}
       className={`px-4 md:px-8 lg:px-33.75 ${isHero ? "pt-6 md:pt-9 pb-20" : ""}`}
     >
-      {children}
+      <div className="h-max">{children}</div>
     </div>
   );
 };
