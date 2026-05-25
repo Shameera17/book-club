@@ -17,7 +17,7 @@ export const Landing = () => {
           className="lg:mb-20 mb:mb-16 mb-12"
         />
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center max-h-151.5!">
           <div className="flex-1">
             <h1 className="text-preset-1 mb-6 bg-gradient-text">
               Join the ultimate tech book club
@@ -91,7 +91,9 @@ export const Landing = () => {
               alt="image-hero-desktop.webp"
               width={540}
               height={606}
-              className="w-full h-full rounded-lg"
+              objectFit="cover"
+              className="rounded-lg"
+              style={{ objectFit: "cover", maxHeight: "606px" }}
             />
           </div>
         </div>
@@ -104,7 +106,7 @@ export const Landing = () => {
               alt="image-read-together-desktop.webp"
               width={560}
               height={520}
-              className="w-full h-full rounded-lg"
+              className=" rounded-lg"
             />
           </div>
           <div className="flex-1">
@@ -139,7 +141,7 @@ export const Landing = () => {
               alt="image-not-average-desktop.webp"
               width={560}
               height={520}
-              className="w-full h-full rounded-lg"
+              className=" rounded-lg"
             />
           </div>
         </div>
