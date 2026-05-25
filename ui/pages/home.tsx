@@ -3,12 +3,12 @@ import { getPath, IMAGES } from "@/app/lib/assets";
 import Image from "next/image";
 import "../../app/styles/home.css";
 import Button from "../buttons";
-import ListItem from "../labels";
-import CardWrapper from "../wrapper";
+import { ListItem1, ListItem2 } from "../list-items";
+import { CardWrapper, CardWrapper1 } from "../wrapper";
 export const Landing = () => {
   return (
     <div className="flex flex-col gap-16 md:gap-20 lg:gap-30">
-      <CardWrapper isHero>
+      <CardWrapper isHero isPatternBackground>
         <Image
           src={getPath("logo.svg")}
           alt="logo.svg"
@@ -17,7 +17,7 @@ export const Landing = () => {
           className="lg:mb-20 mb:mb-16 mb-12"
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div className="flex-1">
             <h1 className="text-preset-1 mb-6 bg-gradient-text">
               Join the ultimate tech book club
@@ -97,7 +97,7 @@ export const Landing = () => {
         </div>
       </CardWrapper>
       <CardWrapper>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div>
             <Image
               src={getPath("image-read-together-desktop.webp")}
@@ -112,16 +112,16 @@ export const Landing = () => {
               Read together, grow together
             </h1>
             <div className="flex flex-col gap-6">
-              <ListItem text="Monthly curated tech reads selected by industry experts" />
-              <ListItem text="Virtual and in-person meetups for deep-dive discussions" />
-              <ListItem text="Early access to new tech book releases" />
-              <ListItem text="Author Q&A sessions with tech thought leaders" />
+              <ListItem1 text="Monthly curated tech reads selected by industry experts" />
+              <ListItem1 text="Virtual and in-person meetups for deep-dive discussions" />
+              <ListItem1 text="Early access to new tech book releases" />
+              <ListItem1 text="Author Q&A sessions with tech thought leaders" />
             </div>
           </div>
         </div>
       </CardWrapper>
       <CardWrapper>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div className="flex-1">
             <h1 className="text-preset-2 text-neutral-900 mb-6">
               Not your average book <span className="highlight-word">club</span>
@@ -142,6 +142,31 @@ export const Landing = () => {
               className="w-full h-full rounded-lg"
             />
           </div>
+        </div>
+      </CardWrapper>
+      <CardWrapper>
+        <CardWrapper1 isPatternBackground>
+          <h1 className="w-full lg:w-lg lg:mx-auto text-preset-2 text-neutral-900 text-center">
+            Your tech reading journey
+          </h1>
+          <div className="flex flex-col lg:flex-row gap-12 mt-8 md:mt-12 lg:mt-16 justify-center">
+            <ListItem2 index={1} text="Choose your membership tier" />
+            <ListItem2 index={2} text="Get your monthly book selection" />
+            <ListItem2 index={3} text="Join our discussion forums" />
+            <ListItem2
+              index={4}
+              text="Attend exclusive meetups"
+              showArrow={false}
+            />
+          </div>
+        </CardWrapper1>
+      </CardWrapper>
+      <CardWrapper>
+        <h1 className="w-full lg:mx-auto text-preset-2 text-neutral-900 text-center">
+          Membership options
+        </h1>
+        <div className="flex flex-1 gap-12 mt-8 md:mt-12 lg:mt-16 justify-center">
+          {/* packs */}
         </div>
       </CardWrapper>
     </div>
