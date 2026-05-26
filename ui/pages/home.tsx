@@ -166,37 +166,35 @@ export const Landing = () => {
         <h1 className="w-full lg:mx-auto text-preset-2 text-neutral-900 text-center">
           Membership options
         </h1>
-        <div className="w-full">
-          <div className="flex  flex-wrap gap-6 items-center  min-[1353px]:justify-center mt-8 md:mt-12 lg:mt-16">
-            <ListItem3
-              title={"Starter"}
-              price={"19"}
-              info={["1 book/month", "Online forums"]}
-              button={{
-                label: "SUBSCRIBE NOW",
-                action: () => {},
-              }}
-            />
-            <ListItem3
-              title={"Pro"}
-              price={"49"}
-              info={["2 books/month", "Virtual meetups"]}
-              isPro
-              button={{
-                label: "SUBSCRIBE NOW",
-                action: () => {},
-              }}
-            />
-            <ListItem3
-              title={"Enterprise"}
-              price={"Custom"}
-              info={["Team access", "Private sessions"]}
-              button={{
-                label: "TALK TO US",
-                action: () => {},
-              }}
-            />
-          </div>
+        <div className="flex  flex-wrap gap-6 items-center  justify-center mt-8 md:mt-12 lg:mt-16">
+          <ListItem3
+            title={"Starter"}
+            price={"19"}
+            info={["1 book/month", "Online forums"]}
+            button={{
+              label: "SUBSCRIBE NOW",
+              action: () => {},
+            }}
+          />
+          <ListItem3
+            title={"Pro"}
+            price={"49"}
+            info={["2 books/month", "Virtual meetups"]}
+            isPro
+            button={{
+              label: "SUBSCRIBE NOW",
+              action: () => {},
+            }}
+          />
+          <ListItem3
+            title={"Enterprise"}
+            price={"Custom"}
+            info={["Team access", "Private sessions"]}
+            button={{
+              label: "TALK TO US",
+              action: () => {},
+            }}
+          />
         </div>
       </CardWrapper>
       <CardWrapper>

@@ -72,9 +72,9 @@ export const ListItem3 = ({
   return (
     // <div className={`w-full lg:w-[350px] h-max max-h-[${isPro ? proMaxheight : maxheight}px] lg:max-h-[${isPro ? proMaxheight : maxheight}px]  bg-white rounded-lg p-6 flex flex-col gap-6 ${isPro ? "border-2 border-neutral-900" : "border border-neutral-300"}`}>
     <div
-      className={`p-6 border-2 border-neutral-200 rounded-lg 
-       w-full sm:w-[340px]
-      ${isPro ? " min-[1353px]:py-10 min-[1353px]:px-6" : "p-6"}`}
+      className={`p-6 border border-neutral-200 rounded-lg 
+       w-full sm:w-85
+      ${isPro ? " min-[1353px]:py-10 min-[1353px]:px-6 bg-neutral-100" : "p-6"}`}
     >
       <div className="flex flex-col gap-6">
         <p className="text-preset-4 text-neutral-900">{title}</p>
@@ -95,6 +95,7 @@ export const ListItem3 = ({
         label={button.label}
         onClick={button.action}
         className="w-full mt-8"
+        bgColor="bg-light-salmon-50"
       />
     </div>
   );
