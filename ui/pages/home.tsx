@@ -3,7 +3,7 @@ import { getPath, IMAGES } from "@/app/lib/assets";
 import Image from "next/image";
 import "../../app/styles/home.css";
 import Button from "../buttons";
-import { ListItem1, ListItem2 } from "../list-items";
+import { ListItem1, ListItem2, ListItem3 } from "../list-items";
 import { CardWrapper, CardWrapper1 } from "../wrapper";
 export const Landing = () => {
   return (
@@ -17,7 +17,7 @@ export const Landing = () => {
           className="lg:mb-20 mb:mb-16 mb-12"
         />
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center max-h-151.5!">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center ">
           <div className="flex-1">
             <h1 className="text-preset-1 mb-6 bg-gradient-text">
               Join the ultimate tech book club
@@ -91,9 +91,8 @@ export const Landing = () => {
               alt="image-hero-desktop.webp"
               width={540}
               height={606}
-              objectFit="cover"
               className="rounded-lg"
-              style={{ objectFit: "cover", maxHeight: "606px" }}
+              style={{ maxHeight: "606px" }}
             />
           </div>
         </div>
@@ -135,7 +134,7 @@ export const Landing = () => {
               practical applications.
             </p>
           </div>
-          <div>
+          <div className="relative">
             <Image
               src={getPath("image-not-average-desktop.webp")}
               alt="image-not-average-desktop.webp"
@@ -147,7 +146,7 @@ export const Landing = () => {
         </div>
       </CardWrapper>
       <CardWrapper>
-        <CardWrapper1 isPatternBackground>
+        <CardWrapper1 isPatternBackground className="rounded-12">
           <h1 className="w-full lg:w-lg lg:mx-auto text-preset-2 text-neutral-900 text-center">
             Your tech reading journey
           </h1>
@@ -167,9 +166,78 @@ export const Landing = () => {
         <h1 className="w-full lg:mx-auto text-preset-2 text-neutral-900 text-center">
           Membership options
         </h1>
-        <div className="flex flex-1 gap-12 mt-8 md:mt-12 lg:mt-16 justify-center">
-          {/* packs */}
+        <div className="flex flex-wrap gap-6 items-center min-[1353px]:justify-center mt-8 md:mt-12 lg:mt-16">
+          <ListItem3
+            title={"Starter"}
+            price={"19"}
+            info={["1 book/month", "Online forums"]}
+            button={{
+              label: "SUBSCRIBE NOW",
+              action: () => {},
+            }}
+          />
+          <ListItem3
+            title={"Pro"}
+            price={"49"}
+            info={["2 books/month", "Virtual meetups"]}
+            isPro
+            button={{
+              label: "SUBSCRIBE NOW",
+              action: () => {},
+            }}
+          />
+          <ListItem3
+            title={"Enterprise"}
+            price={"Custom"}
+            info={["Team access", "Private sessions"]}
+            button={{
+              label: "TALK TO US",
+              action: () => {},
+            }}
+          />
         </div>
+      </CardWrapper>
+      <CardWrapper>
+        <div className="flex  items-center justify-center">
+          <Image
+            src={getPath("icon-star.svg")}
+            alt="icon-star.svg"
+            width={24}
+            height={24}
+          />
+          <Image
+            src={getPath("icon-star.svg")}
+            alt="icon-star.svg"
+            width={24}
+            height={24}
+          />
+          <Image
+            src={getPath("icon-star.svg")}
+            alt="icon-star.svg"
+            width={24}
+            height={24}
+          />
+          <Image
+            src={getPath("icon-star.svg")}
+            alt="icon-star.svg"
+            width={24}
+            height={24}
+          />
+          <Image
+            src={getPath("icon-star.svg")}
+            alt="icon-star.svg"
+            width={24}
+            height={24}
+          />
+        </div>
+        <h1 className="w-full lg:mx-auto text-preset-3 text-neutral-900 text-center mt-8 md:mt-12 lg:mt-16">
+          {` "This book club transformed my technical reading from a solitary
+          activity into an enriching community experience. The discussions are
+          gold!"`}
+        </h1>
+        <p className="w-full lg:mx-auto text-preset-5 text-neutral-700 text-center mt-8 md:mt-12 lg:mt-16">
+          Sarah Chen, Software Architect
+        </p>
       </CardWrapper>
     </div>
   );

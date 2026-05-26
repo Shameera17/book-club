@@ -3,6 +3,7 @@ interface CardWrapperProps {
   children: React.ReactNode;
   isHero?: boolean;
   isPatternBackground?: boolean;
+  className?: string;
 }
 const background = {
   background: `var(--gradient-hero), url('/images/bg-pattern.svg')`,
@@ -30,6 +31,7 @@ export const CardWrapper = ({
 export const CardWrapper1 = ({
   children,
   isPatternBackground,
+  className,
 }: Omit<CardWrapperProps, "isHero">) => {
   return (
     <div
@@ -37,7 +39,7 @@ export const CardWrapper1 = ({
         height: "max-content",
         ...(isPatternBackground && background),
       }}
-      className={`py-16 md:py-20 px-4 lg:px-15 md:px-8`}
+      className={`py-16 md:py-20 px-4 lg:px-15 md:px-8 ${className || ""}`}
     >
       <div className="h-max">{children}</div>
     </div>
