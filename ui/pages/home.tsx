@@ -91,7 +91,7 @@ export const Landing = () => {
               alt="image-hero-desktop.webp"
               width={540}
               height={606}
-              className="rounded-lg"
+              className="rounded-lg w-full h-full min-1022:[w-540px] object-cover object-top"
               style={{ maxHeight: "606px" }}
             />
           </div>
@@ -105,7 +105,8 @@ export const Landing = () => {
               alt="image-read-together-desktop.webp"
               width={560}
               height={520}
-              className=" rounded-lg"
+              className="rounded-lg w-full h-full min-1022:[w-540px] min-[580px]:max-[1022px]:object-cover min-[580px]:max-[1022px]:object-top"
+              style={{ maxHeight: "520px" }}
             />
           </div>
           <div className="flex-1">
@@ -140,7 +141,8 @@ export const Landing = () => {
               alt="image-not-average-desktop.webp"
               width={560}
               height={520}
-              className=" rounded-lg"
+              className="rounded-lg w-full h-full min-1022:[w-540px] object-cover min-[580px]:max-[1022px]:object-top"
+              style={{ maxHeight: "520px" }}
             />
           </div>
         </div>
@@ -243,7 +245,7 @@ export const Landing = () => {
         <h1 className="w-full lg:mx-auto text-preset-2 text-neutral-100 text-center">
           Ready to debug your reading list?
         </h1>
-        <div className="flex flex-col gap-3 mt-10 mb-16  justify-center">
+        <div className="flex flex-col gap-3 mt-10 mb-16  items-center">
           <Button
             borderColor="border-neutral-0"
             textColor="text-neutral-0"
@@ -304,7 +306,7 @@ export const Landing = () => {
           </div>
         </div>
         <div className="w-full h-px bg-neutral-700" />
-        <div className="flex justify-between items-center py-6">
+        <div className="flex flex-col md:flex-row md:justify-between items-center py-6 gap-4">
           <p className="text-preset-7 text-neutral-0 text-center mt-6">
             &copy; 2024 Tech Book Club. All rights reserved.
           </p>
