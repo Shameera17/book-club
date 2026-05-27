@@ -6,6 +6,8 @@ interface ButtonProps {
   onClick?: () => void;
   className?: string;
   bgColor?: string;
+  borderColor?: string;
+  textColor?: string;
 }
 const Button = ({
   label,
@@ -13,13 +15,20 @@ const Button = ({
   onClick,
   className,
   bgColor,
+  borderColor,
+  textColor,
 }: ButtonProps) => {
   return (
     <button
       onClick={onClick}
-      className={`flex items-center gap-4  border-2 border-neutral-900 px-6 py-3 rounded-lg ${className} ${bgColor || "bg-transparent"}`}
+      className={`flex items-center gap-4 w-fit border-2 ${borderColor || "border-neutral-900"} px-6 py-3 rounded-lg ${className} ${bgColor || "bg-transparent"}`}
     >
-      <p className="text-preset-6  text-neutral-900 mx-auto"> {label}</p>
+      <p
+        className={`text-preset-6  ${textColor || "text-neutral-900"} mx-auto`}
+      >
+        {" "}
+        {label}
+      </p>
 
       {iconPath && (
         <Image

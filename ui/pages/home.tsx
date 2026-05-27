@@ -146,7 +146,7 @@ export const Landing = () => {
         </div>
       </CardWrapper>
       <CardWrapper>
-        <CardWrapper1 isPatternBackground className="rounded-12">
+        <CardWrapper1 isPatternBackground className1="rounded-12">
           <h1 className="w-full lg:w-lg lg:mx-auto text-preset-2 text-neutral-900 text-center">
             Your tech reading journey
           </h1>
@@ -238,6 +238,91 @@ export const Landing = () => {
         <p className="w-full lg:mx-auto text-preset-5 text-neutral-700 text-center mt-8 md:mt-12 lg:mt-16">
           Sarah Chen, Software Architect
         </p>
+      </CardWrapper>
+      <CardWrapper className2="bg-neutral-900 rounded-tl-4 rounded-tr-4 pt-12 px-4 md:pt-16 md:px-[32px] lg:pt-20 lg:px-[135px]">
+        <h1 className="w-full lg:mx-auto text-preset-2 text-neutral-100 text-center">
+          Ready to debug your reading list?
+        </h1>
+        <div className="flex flex-col gap-3 mt-10 mb-16  justify-center">
+          <Button
+            borderColor="border-neutral-0"
+            textColor="text-neutral-0"
+            label="REVIEW MEMBERSHIP OPTIONS"
+            iconPath={IMAGES.arrowUp}
+          />
+          <div className="flex gap-3 mt-5 items-center">
+            <Image
+              src={getPath("image-avatars.webp")}
+              alt="image-avatars.webp"
+              width={110}
+              height={40}
+              className="h-10"
+            />
+            <div className="flex flex-col gap-1">
+              <div className="flex">
+                <Image
+                  src={getPath("icon-star.svg")}
+                  alt="icon-star.svg"
+                  width={24}
+                  height={24}
+                />
+                <Image
+                  src={getPath("icon-star.svg")}
+                  alt="icon-star.svg"
+                  width={24}
+                  height={24}
+                />
+                <Image
+                  src={getPath("icon-star.svg")}
+                  alt="icon-star.svg"
+                  width={24}
+                  height={24}
+                />
+                <Image
+                  src={getPath("icon-star.svg")}
+                  alt="icon-star.svg"
+                  width={24}
+                  height={24}
+                />
+                <Image
+                  src={getPath("icon-star.svg")}
+                  alt="icon-star.svg"
+                  width={24}
+                  height={24}
+                />
+                <Image
+                  src={getPath("icon-star.svg")}
+                  alt="icon-star.svg"
+                  width={24}
+                  height={24}
+                />
+              </div>
+              <p className="text-preset-7 text-neutral-700 ">
+                200+ developers joined already
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="w-full h-px bg-neutral-700" />
+        <div className="flex justify-between items-center py-6">
+          <p className="text-preset-7 text-neutral-0 text-center mt-6">
+            &copy; 2024 Tech Book Club. All rights reserved.
+          </p>
+          <span className="flex gap-6">
+            <Image
+              src={getPath("logo-bluesky.svg")}
+              alt="logo-bluesky.svg"
+              width={22}
+              height={22}
+            />
+            <Image
+              src={getPath("logo-linkedin.svg")}
+              alt="logo-linkedin.svg"
+              width={22}
+              height={22}
+            />
+          </span>
+        </div>
       </CardWrapper>
     </div>
   );
