@@ -105,7 +105,7 @@ export const Landing = () => {
               alt="image-read-together-desktop.webp"
               width={560}
               height={520}
-              className="rounded-lg min-[571px]:max-[1024px]:w-full h-full min-1022:[w-540px] min-[580px]:max-[1022px]:object-cover min-[580px]:max-[1022px]:object-top"
+              className="rounded-lg min-[571px]:max-[1024px]:w-full h-full min-1022:[w-540px] min-[580px]:max-[1024px]:object-cover min-[580px]:max-[1022px]:object-top"
               style={{ maxHeight: "520px" }}
             />
           </div>
