@@ -155,7 +155,7 @@ export const Landing = () => {
             alt="logos-tech.svg"
             width={119.56}
             height={138}
-            className="absolute right-[50.44px] bottom-12.5 min-[1240px]:mx-auto min-[1240px]:left-0 min-[1240px]:right-0 z-0 pointer-events-none transition-all duration-300  "
+            className="absolute right-[50.44px] bottom-12.5 min-[1240px]:inset-x-0 min-[1240px]:mx-auto z-0 pointer-events-none transition-all duration-300"
           />
         </div>
       </CardWrapper>
