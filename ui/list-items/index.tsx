@@ -94,14 +94,14 @@ export const ListItem3 = ({
       <Button
         label={button.label}
         onClick={button.action}
-        className="w-full mt-8"
-        bgColor="bg-light-salmon-50 z-10"
+        className="w-full mt-8 relative"
+        bgColor="bg-light-salmon-50 z-10 "
       />
       {isPro && (
         <Image
           src="/images/glow-card-bg.svg"
           alt="pattern-hero"
-          className="absolute right-0 bottom-0 z-0"
+          className="absolute right-0 bottom-0 z-0 pointer-events-none"
           width={684}
           height={684}
         />

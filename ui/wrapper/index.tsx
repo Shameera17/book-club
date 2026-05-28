@@ -29,14 +29,14 @@ export const CardWrapper = ({
       }}
       className={`px-4 min-[768px]:px-8 min-[1440px]:px-33.75 ${isHero ? "pt-6 md:pt-9 pb-20" : ""} ${className1}`}
     >
-      <div className={`h-max max-w-293.5 mx-auto ${className2} `}>
+      <div className={`h-max max-w-293.5 mx-auto relative z-10 ${className2} `}>
         {children}
       </div>
       {isHero && (
         <Image
           src="/images/glow-bg.svg"
           alt="pattern-hero"
-          className="absolute right-0 bottom-0"
+          className="absolute right-0 bottom-0 z-0 pointer-events-none"
           width={684}
           height={684}
         />
