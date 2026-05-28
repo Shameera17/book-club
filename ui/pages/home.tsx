@@ -148,7 +148,7 @@ export const Landing = () => {
         </div>
       </CardWrapper>
       <CardWrapper>
-        <CardWrapper1 isPatternBackground className1="rounded-12">
+        <CardWrapper1 isPatternBackground className1="rounded-12 relative">
           <h1 className="w-full lg:w-lg lg:mx-auto text-preset-2 text-neutral-900 text-center">
             Your tech reading journey
           </h1>
@@ -162,6 +162,14 @@ export const Landing = () => {
               showArrow={false}
             />
           </div>
+
+          <Image
+            src="/images/Glow.svg"
+            alt="pattern-hero"
+            className="absolute right-0 bottom-0"
+            width={684}
+            height={684}
+          />
         </CardWrapper1>
       </CardWrapper>
       <CardWrapper>

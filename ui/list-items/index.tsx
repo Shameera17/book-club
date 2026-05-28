@@ -72,7 +72,7 @@ export const ListItem3 = ({
   return (
     // <div className={`w-full lg:w-[350px] h-max max-h-[${isPro ? proMaxheight : maxheight}px] lg:max-h-[${isPro ? proMaxheight : maxheight}px]  bg-white rounded-lg p-6 flex flex-col gap-6 ${isPro ? "border-2 border-neutral-900" : "border border-neutral-300"}`}>
     <div
-      className={`p-6 border border-neutral-200 rounded-lg 
+      className={`relative p-6 border border-neutral-200 rounded-lg 
        w-full min-[375px]:w-85 
       ${isPro ? " min-[1135px]:py-10 min-[1135px]:px-6 bg-neutral-100 min-[1135px]:w-87.5" : "p-6 min-[1135px]:w-71.5"}`}
     >
@@ -95,8 +95,17 @@ export const ListItem3 = ({
         label={button.label}
         onClick={button.action}
         className="w-full mt-8"
-        bgColor="bg-light-salmon-50"
+        bgColor="bg-light-salmon-50 z-10"
       />
+      {isPro && (
+        <Image
+          src="/images/glow-card-bg.svg"
+          alt="pattern-hero"
+          className="absolute right-0 bottom-0 z-0"
+          width={684}
+          height={684}
+        />
+      )}
     </div>
   );
 };
