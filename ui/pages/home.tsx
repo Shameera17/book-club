@@ -152,7 +152,7 @@ export const Landing = () => {
           <h1 className="w-full lg:w-lg lg:mx-auto text-preset-2 text-neutral-900 text-center">
             Your tech reading journey
           </h1>
-          <div className="flex flex-col lg:flex-row gap-12 mt-8 md:mt-12 lg:mt-16 justify-center">
+          <div className="flex flex-col lg:flex-row gap-12 mt-8 md:mt-12 lg:mt-16 justify-center relative z-10">
             <ListItem2 index={1} text="Choose your membership tier" />
             <ListItem2 index={2} text="Get your monthly book selection" />
             <ListItem2 index={3} text="Join our discussion forums" />
@@ -166,7 +166,7 @@ export const Landing = () => {
           <Image
             src="/images/Glow.svg"
             alt="pattern-hero"
-            className="absolute right-0 bottom-0"
+            className="absolute right-0 bottom-0 z-0 pointer-events-none"
             width={684}
             height={684}
           />
