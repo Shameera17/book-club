@@ -168,35 +168,39 @@ export const Landing = () => {
         <h1 className="w-full lg:mx-auto text-preset-2 text-neutral-900 text-center">
           Membership options
         </h1>
-        <div className="flex  flex-wrap gap-6 items-center  justify-center mt-8 md:mt-12 lg:mt-16">
-          <ListItem3
-            title={"Starter"}
-            price={"19"}
-            info={["1 book/month", "Online forums"]}
-            button={{
-              label: "SUBSCRIBE NOW",
-              action: () => {},
-            }}
-          />
-          <ListItem3
-            title={"Pro"}
-            price={"49"}
-            info={["2 books/month", "Virtual meetups"]}
-            isPro
-            button={{
-              label: "SUBSCRIBE NOW",
-              action: () => {},
-            }}
-          />
-          <ListItem3
-            title={"Enterprise"}
-            price={"Custom"}
-            info={["Team access", "Private sessions"]}
-            button={{
-              label: "TALK TO US",
-              action: () => {},
-            }}
-          />
+        <div className="flex w-full items-center justify-center">
+          <div className=" mt-8 md:mt-12 lg:mt-16 min-[737px]:max-[1135px]:w-[704px]">
+            <div className="flex  flex-wrap gap-6 items-center max-[736px]:justify-center">
+              <ListItem3
+                title={"Starter"}
+                price={"19"}
+                info={["1 book/month", "Online forums"]}
+                button={{
+                  label: "SUBSCRIBE NOW",
+                  action: () => {},
+                }}
+              />
+              <ListItem3
+                title={"Pro"}
+                price={"49"}
+                info={["2 books/month", "Virtual meetups"]}
+                isPro
+                button={{
+                  label: "SUBSCRIBE NOW",
+                  action: () => {},
+                }}
+              />
+              <ListItem3
+                title={"Enterprise"}
+                price={"Custom"}
+                info={["Team access", "Private sessions"]}
+                button={{
+                  label: "TALK TO US",
+                  action: () => {},
+                }}
+              />
+            </div>
+          </div>
         </div>
       </CardWrapper>
       <CardWrapper>
