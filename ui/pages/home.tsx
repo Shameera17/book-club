@@ -33,6 +33,8 @@ export const Landing = () => {
               label="REVIEW MEMBERSHIP OPTIONS"
               iconPath={IMAGES.arrowDown}
               onClick={() => scrolltoHash("membership-options")}
+              bgColor="bg-light-salmon-50"
+              bgHoverColor="bg-gradient-hero"
             />
             <div className="flex gap-3 mt-5 items-center">
               <Image

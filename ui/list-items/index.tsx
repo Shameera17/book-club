@@ -94,8 +94,8 @@ export const ListItem3 = ({
       <Button
         label={button.label}
         onClick={button.action}
-        className="w-full mt-8 relative"
-        bgColor="bg-light-salmon-50 z-10 "
+        className="w-full mt-8 relative z-10"
+        bgColor="bg-light-salmon-50  "
       />
       {isPro && (
         <Image

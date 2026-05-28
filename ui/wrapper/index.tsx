@@ -10,8 +10,8 @@ interface CardWrapperProps {
 }
 
 const background = {
-  background: `var(--gradient-hero), url('/images/bg-pattern.svg')`,
-  backgroundBlendMode: "overlay", // or 'multiply', 'soft-light'
+  background: `url('/images/bg-pattern.svg'), var(--color-neutral-100)`,
+  // backgroundBlendMode: "overlay", // or 'multiply', 'soft-light' depending on the desired effect
   backgroundSize: "cover",
   backgroundPosition: "center",
 };
