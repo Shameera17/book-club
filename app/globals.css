@@ -33,6 +33,10 @@ body {
   background: var(--gradient-hero);
 }
 
+.bg-gradient-button {
+  background: var(--gradient-button);
+}
+
 .bg-gradient-text {
   background: var(--gradient-text);
   -webkit-background-clip: text;

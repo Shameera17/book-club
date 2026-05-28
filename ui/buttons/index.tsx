@@ -43,11 +43,7 @@ const Button = ({
         }
       : undefined;
 
-  const bgClasses = isBgColorClass
-    ? isHover && bgHoverColor
-      ? bgHoverColor
-      : bgColor
-    : "";
+  const bgClasses = isHover && bgHoverColor ? bgHoverColor : bgColor;
 
   return (
     <button

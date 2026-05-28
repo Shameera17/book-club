@@ -265,6 +265,7 @@ export const Landing = () => {
           <Button
             borderColor="border-neutral-0"
             textColor="text-neutral-0"
+            bgHoverColor="bg-gradient-button"
             label="REVIEW MEMBERSHIP OPTIONS"
             iconPath={IMAGES.arrowUp}
             onClick={() => scrolltoHash("membership-options")}

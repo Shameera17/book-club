@@ -1,8 +1,12 @@
 :root {
   /* Gradients */
+  /* step 1 : add gradient variables here */
+  /* step 2: add new gradient classes in globals.css */
+  /* step 3: use the gradient classes in the components */
   --gradient-text: linear-gradient(107deg, #ff9a6d -11.37%, #062630 61.84%);
   --gradient-bg: linear-gradient(180deg, #ffe2d1 0%, #fff5ef 100%);
   --gradient-hero: linear-gradient(90deg, #ffe2d1 0%, #fff5ef 100%);
+  --gradient-button: linear-gradient(90deg, #385150 0%, #062630 100%);
 }
 
 @theme inline {

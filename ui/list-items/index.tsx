@@ -95,7 +95,8 @@ export const ListItem3 = ({
         label={button.label}
         onClick={button.action}
         className="w-full mt-8 relative z-10"
-        bgColor="bg-light-salmon-50  "
+        bgColor="bg-light-salmon-50"
+        bgHoverColor="bg-gradient-hero"
       />
       {isPro && (
         <Image
