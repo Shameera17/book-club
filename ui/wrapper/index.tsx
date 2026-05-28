@@ -25,9 +25,11 @@ export const CardWrapper = ({
         height: "max-content",
         ...(isPatternBackground && background),
       }}
-      className={`px-4 md:px-8 min-[1440px]:px-33.75 ${isHero ? "pt-6 md:pt-9 pb-20" : ""} ${className1}`}
+      className={`px-4 min-[768px]:px-8 min-[1440px]:px-33.75 ${isHero ? "pt-6 md:pt-9 pb-20" : ""} ${className1}`}
     >
-      <div className={`h-max ${className2}`}>{children}</div>
+      <div className={`h-max max-w-293.5 mx-auto ${className2}`}>
+        {children}
+      </div>
     </div>
   );
 };

@@ -91,7 +91,7 @@ export const Landing = () => {
               alt="image-hero-desktop.webp"
               width={540}
               height={606}
-              className="rounded-lg w-full h-full min-1022:[w-540px] object-cover object-top"
+              className="rounded-lg min-[571px]:max-[1024px]:w-full h-full min-1022:[w-540px] object-cover object-top"
               style={{ maxHeight: "606px" }}
             />
           </div>
@@ -105,7 +105,7 @@ export const Landing = () => {
               alt="image-read-together-desktop.webp"
               width={560}
               height={520}
-              className="rounded-lg w-full h-full min-1022:[w-540px] min-[580px]:max-[1022px]:object-cover min-[580px]:max-[1022px]:object-top"
+              className="rounded-lg min-[571px]:max-[1024px]:w-full h-full min-1022:[w-540px] min-[580px]:max-[1022px]:object-cover min-[580px]:max-[1022px]:object-top"
               style={{ maxHeight: "520px" }}
             />
           </div>
@@ -141,7 +141,7 @@ export const Landing = () => {
               alt="image-not-average-desktop.webp"
               width={560}
               height={520}
-              className="rounded-lg w-full h-full min-1022:[w-540px] object-cover min-[580px]:max-[1022px]:object-top"
+              className="rounded-lg min-[571px]:max-[1024px]:w-full h-full min-1022:[w-540px] object-cover min-[580px]:max-[1022px]:object-top"
               style={{ maxHeight: "520px" }}
             />
           </div>
@@ -169,7 +169,7 @@ export const Landing = () => {
           Membership options
         </h1>
         <div className="flex w-full items-center justify-center">
-          <div className=" mt-8 md:mt-12 lg:mt-16 min-[737px]:max-[1135px]:w-[704px]">
+          <div className=" mt-8 md:mt-12 lg:mt-16 min-[737px]:max-[1135px]:w-176">
             <div className="flex  flex-wrap gap-6 items-center max-[736px]:justify-center">
               <ListItem3
                 title={"Starter"}
