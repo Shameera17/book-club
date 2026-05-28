@@ -1,5 +1,6 @@
 "use client";
 import { getPath, IMAGES } from "@/app/lib/assets";
+import { scrolltoHash } from "@/app/lib/helpers";
 import Image from "next/image";
 import "../../app/styles/home.css";
 import Button from "../buttons";
@@ -31,6 +32,7 @@ export const Landing = () => {
             <Button
               label="REVIEW MEMBERSHIP OPTIONS"
               iconPath={IMAGES.arrowDown}
+              onClick={() => scrolltoHash("membership-options")}
             />
             <div className="flex gap-3 mt-5 items-center">
               <Image
@@ -172,7 +174,7 @@ export const Landing = () => {
           />
         </CardWrapper1>
       </CardWrapper>
-      <CardWrapper>
+      <CardWrapper id="membership-options">
         <h1 className="w-full lg:mx-auto text-preset-2 text-neutral-900 text-center">
           Membership options
         </h1>
@@ -263,6 +265,7 @@ export const Landing = () => {
             textColor="text-neutral-0"
             label="REVIEW MEMBERSHIP OPTIONS"
             iconPath={IMAGES.arrowUp}
+            onClick={() => scrolltoHash("membership-options")}
           />
           <div className="flex gap-3 mt-5 items-center">
             <Image

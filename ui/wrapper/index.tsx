@@ -6,7 +6,9 @@ interface CardWrapperProps {
   isPatternBackground?: boolean;
   className1?: string;
   className2?: React.HTMLAttributes<HTMLDivElement>["className"];
+  id?: string;
 }
+
 const background = {
   background: `var(--gradient-hero), url('/images/bg-pattern.svg')`,
   backgroundBlendMode: "overlay", // or 'multiply', 'soft-light'
@@ -19,9 +21,11 @@ export const CardWrapper = ({
   isPatternBackground,
   className1,
   className2,
+  id,
 }: CardWrapperProps) => {
   return (
     <div
+      id={id}
       style={{
         height: "max-content",
         position: "relative",
