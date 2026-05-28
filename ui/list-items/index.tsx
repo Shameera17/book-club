@@ -79,7 +79,10 @@ export const ListItem3 = ({
       <div className="flex flex-col gap-6">
         <p className="text-preset-4 text-neutral-900">{title}</p>
         <span className="flex items-center gap-2">
-          <p className="text-preset-3 text-neutral-900">{price}</p>
+          <p className="text-preset-3 text-neutral-900">
+            {Number(price) > 0 && "$"}
+            {price}
+          </p>
           {Number(price) > 0 && (
             <p className="text-preset-5 text-neutral-900">/month</p>
           )}
@@ -94,7 +97,7 @@ export const ListItem3 = ({
       <Button
         label={button.label}
         onClick={button.action}
-        className="w-full mt-8 relative z-10"
+        className="w-full mt-8 relative z-10 focus:outline-none focus:ring-2 focus:ring-neutral-700 focus:ring-offset-2"
         bgColor="bg-light-salmon-50"
         bgHoverColor="bg-gradient-hero"
       />
@@ -102,7 +105,7 @@ export const ListItem3 = ({
         <Image
           src="/images/glow-card-bg.svg"
           alt="pattern-hero"
-          className="absolute right-0 bottom-0 z-0 pointer-events-none"
+          className="absolute right-0 bottom-0 z-0 pointer-events-none rounded-br-12"
           width={684}
           height={684}
         />

@@ -35,6 +35,7 @@ export const Landing = () => {
               onClick={() => scrolltoHash("membership-options")}
               bgColor="bg-light-salmon-50"
               bgHoverColor="bg-gradient-hero"
+              className="focus:outline-none focus:ring-2 focus:ring-neutral-700 focus:ring-offset-2"
             />
             <div className="flex gap-3 mt-5 items-center">
               <Image
@@ -170,7 +171,7 @@ export const Landing = () => {
           <Image
             src="/images/Glow.svg"
             alt="pattern-hero"
-            className="absolute right-0 bottom-0 z-0 pointer-events-none"
+            className="absolute right-0 bottom-0 z-0 pointer-events-none rounded-br-12"
             width={684}
             height={684}
           />
@@ -269,6 +270,7 @@ export const Landing = () => {
             label="REVIEW MEMBERSHIP OPTIONS"
             iconPath={IMAGES.arrowUp}
             onClick={() => scrolltoHash("membership-options")}
+            className="focus:outline-2 focus:ring-2  focus:ring-neutral-100 focus:ring-offset-2"
           />
           <div className="flex gap-3 mt-5 items-center">
             <Image
@@ -317,7 +319,7 @@ export const Landing = () => {
                   height={24}
                 />
               </div>
-              <p className="text-preset-7 text-neutral-700 ">
+              <p className="text-preset-7 text-neutral-0 ">
                 200+ developers joined already
               </p>
             </div>
