@@ -114,7 +114,7 @@ export const Landing = () => {
               style={{ maxHeight: "520px" }}
             />
           </div>
-          <div className="flex-1">
+          <div className="flex-1 max-w-132.5 ml-auto">
             <h1 className="text-preset-2 text-neutral-900 mb-6">
               Read together, grow together
             </h1>
@@ -128,8 +128,8 @@ export const Landing = () => {
         </div>
       </CardWrapper>
       <CardWrapper>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-          <div className="flex-1">
+        <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          <div className="flex-1 max-w-132.5 mr-auto">
             <h1 className="text-preset-2 text-neutral-900 mb-6">
               Not your average book <span className="highlight-word">club</span>
             </h1>
@@ -150,6 +150,13 @@ export const Landing = () => {
               style={{ maxHeight: "520px" }}
             />
           </div>
+          <Image
+            src={getPath("logos-tech.svg")}
+            alt="logos-tech.svg"
+            width={119.56}
+            height={138}
+            className="absolute right-[50.44px] bottom-12.5 min-[1240px]:mx-auto min-[1240px]:left-0 min-[1240px]:right-0 z-0 pointer-events-none transition-all duration-300  "
+          />
         </div>
       </CardWrapper>
       <CardWrapper>
