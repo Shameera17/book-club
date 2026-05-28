@@ -9,7 +9,11 @@ import { CardWrapper, CardWrapper1 } from "../wrapper";
 export const Landing = () => {
   return (
     <div className="flex flex-col gap-16 md:gap-20 lg:gap-30">
-      <CardWrapper isHero isPatternBackground>
+      <CardWrapper
+        isHero
+        isPatternBackground
+        className1="relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-20 after:bg-gradient-to-t after:from-white after:to-transparent after:pointer-events-none"
+      >
         <Image
           src={getPath("logo.svg")}
           alt="logo.svg"
