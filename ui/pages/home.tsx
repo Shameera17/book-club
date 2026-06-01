@@ -2,11 +2,42 @@
 import { getPath, IMAGES } from "@/app/lib/assets";
 import { scrolltoHash } from "@/app/lib/helpers";
 import Image from "next/image";
+import { useState } from "react";
 import "../../app/styles/home.css";
 import Button from "../buttons";
 import { ListItem1, ListItem2, ListItem3 } from "../list-items";
+import { Modal, SubscriptionModalContent } from "../modal";
 import { CardWrapper, CardWrapper1 } from "../wrapper";
+
 export const Landing = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedPlan, setSelectedPlan] = useState<{
+    name: "Starter" | "Pro" | "Enterprise";
+    price: string;
+  } | null>(null);
+
+  const handleSubscribe = (
+    plan: "Starter" | "Pro" | "Enterprise",
+    price: string,
+  ) => {
+    setSelectedPlan({ name: plan, price });
+    setIsModalOpen(true);
+  };
+
+  const handleConfirm = () => {
+    // Handle subscription confirmation
+    alert(
+      `Thank you for subscribing to the ${selectedPlan?.name} plan! Check your email for confirmation.`,
+    );
+    setIsModalOpen(false);
+    setSelectedPlan(null);
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+    setSelectedPlan(null);
+  };
+
   return (
     <div className="flex flex-col gap-16 md:gap-20 lg:gap-30">
       <CardWrapper
@@ -201,7 +232,7 @@ export const Landing = () => {
                 info={["1 book/month", "Online forums"]}
                 button={{
                   label: "SUBSCRIBE NOW",
-                  action: () => {},
+                  action: () => handleSubscribe("Starter", "19"),
                 }}
               />
               <ListItem3
@@ -211,7 +242,7 @@ export const Landing = () => {
                 isPro
                 button={{
                   label: "SUBSCRIBE NOW",
-                  action: () => {},
+                  action: () => handleSubscribe("Pro", "49"),
                 }}
               />
               <ListItem3
@@ -220,7 +251,7 @@ export const Landing = () => {
                 info={["Team access", "Private sessions"]}
                 button={{
                   label: "TALK TO US",
-                  action: () => {},
+                  action: () => handleSubscribe("Enterprise", "Custom"),
                 }}
               />
             </div>
@@ -357,6 +388,23 @@ export const Landing = () => {
           </span>
         </div>
       </CardWrapper>
+
+      {/* Subscription Modal */}
+      {selectedPlan && (
+        <Modal
+          isOpen={isModalOpen}
+          onClose={handleCancel}
+          title={`Subscribe to ${selectedPlan.name}`}
+          size="md"
+        >
+          <SubscriptionModalContent
+            plan={selectedPlan.name}
+            price={selectedPlan.price}
+            onConfirm={handleConfirm}
+            onCancel={handleCancel}
+          />
+        </Modal>
+      )}
     </div>
   );
 };
