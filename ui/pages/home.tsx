@@ -138,7 +138,7 @@ export const Landing = () => {
         </div>
       </CardWrapper>
       <CardWrapper>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <div className="grid grid-cols-1  lg:grid-cols-2 gap-10 items-center">
           <div>
             <Image
               src={getPath("image-read-together-desktop.webp")}
@@ -149,7 +149,7 @@ export const Landing = () => {
               style={{ maxHeight: "520px" }}
             />
           </div>
-          <div className="flex-1 max-w-132.5 ml-auto">
+          <div className="flex-1 w-full min-[1024px]:max-w-132.5  ml-auto">
             <h1 className="text-preset-2 text-neutral-900 mb-6">
               Read together, grow together
             </h1>
@@ -164,7 +164,7 @@ export const Landing = () => {
       </CardWrapper>
       <CardWrapper>
         <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-          <div className="flex-1 max-w-132.5 mr-auto">
+          <div className="flex-1 w-full min-[1024px]:max-w-132.5  mr-auto">
             <h1 className="text-preset-2 text-neutral-900 mb-6">
               Not your average book <span className="highlight-word">club</span>
             </h1>
