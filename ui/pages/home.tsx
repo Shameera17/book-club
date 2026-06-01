@@ -139,7 +139,7 @@ export const Landing = () => {
       </CardWrapper>
       <CardWrapper>
         <div className="grid grid-cols-1  lg:grid-cols-2 gap-10 items-center">
-          <div>
+          <div className="order-2 lg:order-1">
             <Image
               src={getPath("image-read-together-desktop.webp")}
               alt="image-read-together-desktop.webp"
@@ -149,7 +149,7 @@ export const Landing = () => {
               style={{ maxHeight: "520px" }}
             />
           </div>
-          <div className="flex-1 w-full min-[1024px]:max-w-132.5  ml-auto">
+          <div className="order-1 lg:order-2 flex-1 w-full min-[1024px]:max-w-132.5  ml-auto">
             <h1 className="text-preset-2 text-neutral-900 mb-6">
               Read together, grow together
             </h1>
