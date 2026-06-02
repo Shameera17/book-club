@@ -105,7 +105,7 @@ export const ListItem3 = ({
         <Image
           src="/images/glow-card-bg.svg"
           alt="pattern-hero"
-          className="absolute right-0 bottom-0 z-0 pointer-events-none rounded-br-12"
+          className="absolute right-0 bottom-0 z-0 pointer-events-none rounded-br-lg"
           width={684}
           height={684}
         />

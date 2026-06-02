@@ -43,7 +43,8 @@ export const Landing = () => {
       <CardWrapper
         isHero
         isPatternBackground
-        className1="relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-20 after:bg-gradient-to-t after:from-white after:to-transparent after:pointer-events-none"
+        className1="relative "
+        // className1="relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-20 after:bg-gradient-to-t after:from-white after:to-transparent after:pointer-events-none"
       >
         <Image
           src={getPath("logo.svg")}
@@ -166,7 +167,7 @@ export const Landing = () => {
         <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div className="flex-1 w-full min-[1024px]:max-w-132.5  mr-auto">
             <h1 className="text-preset-2 text-neutral-900 mb-6">
-              Not your average book <span className="highlight-word">club</span>
+              Not your average book <span className="highlight-word" />
             </h1>
             <p className="text-preset-5-semibold text-neutral-700">
               Connect with a community that speaks your language - from{" "}
@@ -196,10 +197,10 @@ export const Landing = () => {
       </CardWrapper>
       <CardWrapper>
         <CardWrapper1 isPatternBackground className1="rounded-12 relative">
-          <h1 className="w-full lg:w-lg lg:mx-auto text-preset-2 text-neutral-900 text-center">
+          <h1 className="w-full lg:w-lg lg:mx-auto text-preset-2 text-neutral-900 lg:text-center">
             Your tech reading journey
           </h1>
-          <div className="flex flex-col lg:flex-row gap-12 mt-8 md:mt-12 lg:mt-16 justify-center relative z-10">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 mt-8 md:mt-12 lg:mt-16 justify-center relative z-10">
             <ListItem2 index={1} text="Choose your membership tier" />
             <ListItem2 index={2} text="Get your monthly book selection" />
             <ListItem2 index={3} text="Join our discussion forums" />
@@ -225,7 +226,7 @@ export const Landing = () => {
         </h1>
         <div className="flex w-full items-center justify-center">
           <div className=" mt-8 md:mt-12 lg:mt-16 min-[737px]:max-[1135px]:w-176">
-            <div className="flex  flex-wrap gap-6 items-center max-[736px]:justify-center">
+            <div className="flex  flex-wrap gap-6 items-center max-[751px]:justify-center">
               <ListItem3
                 title={"Starter"}
                 price={"19"}
