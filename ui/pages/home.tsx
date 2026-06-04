@@ -43,8 +43,8 @@ export const Landing = () => {
       <CardWrapper
         isHero
         isPatternBackground
-        className1="relative "
-        // className1="relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-20 after:bg-gradient-to-t after:from-white after:to-transparent after:pointer-events-none"
+        // className1="relative "
+        className1="relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-20 after:bg-gradient-to-t after:from-white after:to-transparent after:pointer-events-none"
       >
         <Image
           src={getPath("logo.svg")}
